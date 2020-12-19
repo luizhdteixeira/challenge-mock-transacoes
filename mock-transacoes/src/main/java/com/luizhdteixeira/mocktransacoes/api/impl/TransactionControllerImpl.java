@@ -7,7 +7,6 @@ import com.luizhdteixeira.mocktransacoes.service.TransactionService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -20,7 +19,7 @@ public class TransactionControllerImpl implements TransactionController {
     }
 
     @Override
-    public ResponseEntity<List<TransactionDTO>> findByParamsTransactions(@Valid Integer id, @Valid Integer mes, @Valid Integer ano) {
+    public ResponseEntity<List<TransactionDTO>> findByParamsTransactions(Integer id, Integer mes, Integer ano) {
         return ResponseEntity.ok(transactionService.generateTransactions(new PersonalDataDto(id, mes, ano)));
     }
 }
