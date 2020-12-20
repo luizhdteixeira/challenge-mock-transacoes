@@ -18,6 +18,6 @@ public interface TransactionController {
     ResponseEntity<List<TransactionDTO>> findByParamsTransactions(
             @PathVariable(value = "id") @Min(1000) @Max(999999) @NotNull Integer id,
             @PathVariable(value = "mes") @Min(1) @Max(12) @NotNull Integer month,
-            @PathVariable(value = "ano") @Min(1) @Max(2020) @NotNull Integer year
+            @PathVariable(value = "ano") @Min(1900) @Max(2020) @NotNull Integer year
     );
 }
