@@ -23,10 +23,10 @@
 ## API: Mock Transacoes
 
 ### URI - Ambientes
-Local: localhost:8080/<id>/transacoes/<ano>/<mes>
+Local: localhost:8080/{id}/transacoes/{ano}/{mes}
 
 Obs.: Se preferir não rodar os passos anteriores.
-Heroku: https://challenge-mock-transactions.herokuapp.com/<id>/transacoes/<ano>/<mes>
+Heroku: https://challenge-mock-transactions.herokuapp.com/{id}/transacoes/{ano}/{mes}
 
 ### PathVariables
 * id: deve ser um número inteiro que contém no mínimo 4 e no máximo 6 dígitos entre os valores entre 1000 e 999999.
